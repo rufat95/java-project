@@ -1,6 +1,9 @@
+import java.util.Random;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int eded = 10;
+        int eded = 144;
 
         for (int i = 1; i <= eded; i++) {
             int sadeBolen = eded % i;
@@ -9,6 +12,11 @@ public class Main {
             }
         }
 
-        
+
+        int b = 1;
+        for (int i = 1; i <= 5; i++) {
+            b = b * i;
+        }
+        System.out.println(b);
     }
 }
