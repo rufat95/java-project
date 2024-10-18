@@ -1,3 +1,4 @@
+import java.sql.Time;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -18,5 +19,7 @@ public class Main {
             b = b * i;
         }
         System.out.println(b);
+
+        Scanner in = new Scanner(System.in);
     }
 }
