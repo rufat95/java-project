@@ -22,7 +22,7 @@ public class MyStack {
             array[i] = null;
         }
         pointer = 0;
-
+        System.out.println("Stack tam temizlendi");
     }
 
     public boolean isEmpty() {
