@@ -1,3 +1,4 @@
+import java.io.Console;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -6,18 +7,12 @@ public class Main {
 //        Scanner scan = new Scanner(System.in);
 //        String word = scan.nextLine();
 
+
         MyStack stack = new MyStack();
         System.out.println(stack.getCapacity() + " eded umumi sahe");
         stack.push("Rufat");
         stack.push("Imran");
         stack.push("Nasir");
-        stack.push("Shamil");
-        stack.push("Eli");
-        stack.push("Elvin");
-        stack.push("Cesur");
-        stack.push("Murad");
-        stack.push("Aqil");
-//        stack.push("Zaur");
 
         stack.showElements();
         System.out.println();
@@ -29,6 +24,7 @@ public class Main {
         System.out.println();
 
         stack.clear();
+        System.out.println(Arrays.toString(stack.array));
         System.out.println();
 
         stack.isEmpty();
