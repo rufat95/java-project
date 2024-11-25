@@ -12,5 +12,7 @@ public class Task11 {
             countArr2 += arr2[i];
         }
         System.out.println(countArr1 - countArr2);
+
+        // I AM LEGEND
     }
 }
