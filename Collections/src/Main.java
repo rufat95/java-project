@@ -1,34 +1,19 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        List<Human> human1 = new ArrayList<>();
+        human1.add(new Human("Nasir", 35));
+        human1.add(new Human("Zamiq", 33));
+        human1.add(new Human("Rufat", 29));
+        human1.add(new Human("Murad", 24));
 
-        User murad = new User();
-        murad.role = Role.SUPER_ADMIN;
+        human1.sort(Comparator.comparing(Human::getName).thenComparing(Human::getAge));
 
-        User imran = new User();
-        imran.role = Role.ADMIN;
-
-        User rufat = new User();
-        rufat.role = Role.USER;
-
-        Deque<Integer> ints = new ArrayDeque<>();
-
-        ints.push(56);
-        ints.push(1);
-        ints.push(2);
-        ints.push(3);
-        ints.push(4);
-        ints.push(78);
-
-        Map<String, String> maps = new  HashMap<>();
-
-        maps.put("1", "Nasir");
-        maps.put("2", "Murad");
-        maps.put("2", "Rufat");
-
-        System.out.println(maps);
-
-
+        for (Human h : human1){
+            System.out.println(h);
+        }
     }
 }
